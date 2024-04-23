@@ -32,5 +32,17 @@
 }
 
 .dark {
-  padding-top: 7px;
+  padding-top: 10px;
+}
+
+.Mode.dark {
+  background-color: #3a383b;
+  color: #e1e1e1;
+  transition: all 0.5s;
+}
+
+.Mode.light {
+  background-color: #F8F3EF;
+  color: #353535;
+  transition: all 0.5s;
 }

@@ -3,12 +3,14 @@ import {
   RouterProvider,
   // Navigate,
 } from "react-router-dom";
+import { useState } from 'react';
 import { Header } from './components/Header'
 import Footer from './components/Footer'
 import { Main } from './components/Main'
 import { About } from "./components/About";
 import { Blog } from "./components/Blog";
 import ErrorPage from "./ErrorPage";
+import './index.css';
 
 const router = createBrowserRouter([
   {
@@ -27,14 +29,20 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [darkModeButton, setDarkModeButton] = useState(false);
+
+  const darkModeChange = () => {
+    setDarkModeButton(!darkModeButton);
+  };
+
   return (
-    <>
-      <Header />
+    <div className={`Mode ${darkModeButton ? "dark" : "light"}`}>
+      <Header darkModeChange={darkModeChange} />
       <div style={{ marginBottom: '100px' }} />
       <RouterProvider router={router} />
       <div style={{ marginTop: '100px' }} />
       <Footer />
-    </>
+    </div>
   );
 }
 

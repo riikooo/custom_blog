@@ -3,11 +3,11 @@ import 'bulma/css/bulma.css';
 import '../index.css';
 import { DarkModeButton } from './DarkModeButton';
 
-export function Header() {
+export function Header({ darkModeChange }) {
   return (
     <>
       <section className="hero">
-        <DarkModeButton />
+        <DarkModeButton  onClick={darkModeChange}/>
         <div className="hero-body">
           <p className="title has-text-centered">
             Documentation
