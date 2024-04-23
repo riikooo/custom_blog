@@ -20,3 +20,17 @@
   height: 400px;
   width: 270px;
 }
+
+.dark-mode {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.noneDark {
+  height: 35px;
+  width: 35px;
+}
+
+.dark {
+  padding-top: 7px;
+}
