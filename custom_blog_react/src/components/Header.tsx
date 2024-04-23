@@ -1,5 +1,6 @@
 // import { Link } from "react-router-dom";
 import React from 'react';
+import { useState } from 'react';
 import 'bulma/css/bulma.css';
 import '../index.css';
 
@@ -7,10 +8,20 @@ import '../index.css';
 // import { About } from "./About";
 
 export function Header() {
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <>
       <section className="hero">
         <div className="hero-body">
+          <div className={`Mode ${darkMode ? "dark" : "light"}`}>
+            <a onClick={toggleDarkMode}>
+              {darkMode ? <i className="fa-solid fa-sun"></i> : <i className="fa-solid fa-moon"></i>}
+            </a>
+          </div>
           <p className="title has-text-centered">
             Documentation
           </p>

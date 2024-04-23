@@ -1,14 +1,17 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
+import '../index.css';
 
 
 export function Blog() {
   return (
-    <>
+    <div  className="has-text-centered">
       <h1>*******Blog*******</h1>
       <p>$$$$$$$$</p>
-      {/* <figure className="image is-128x128"> */}
-        <img src="../assets/sora.jpg" />
-      {/* </figure> */}
-    </>
+      <div className="blog-contents is-flex is-justify-content-center is-spaced">
+        <button className="button is-light is-large">Light</button>
+        <button className="button is-light is-large">Light</button>
+        <button className="button is-light is-large">Light</button>
+      </div>
+    </div>
   )}
