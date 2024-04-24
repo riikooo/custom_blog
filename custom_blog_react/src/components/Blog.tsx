@@ -12,6 +12,12 @@ export function Blog() {
         <button className="button is-light is-large">Light</button>
         <button className="button is-light is-large">Light</button>
         <button className="button is-light is-large">Light</button>
+        <button className="button is-light is-large">Light</button>
+        <button className="button is-light is-large">Light</button>
+        <button className="button is-light is-large">Light</button>
+        <button className="button is-light is-large">Light</button>
+        <button className="button is-light is-large">Light</button>
+        <button className="button is-light is-large">Light</button>
       </div>
     </div>
   )}

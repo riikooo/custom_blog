@@ -3,15 +3,17 @@ import 'bulma/css/bulma.css';
 import '../index.css';
 import { DarkModeButton } from './DarkModeButton';
 
+// import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import { List } from 'react-native-paper';
+
 export function Header({ darkModeChange, darkMode }) {
+
   return (
+    <Router>
     <>
       <section className="hero">
-        {/* <DarkModeButton
-          onClick={darkModeChange}
-          onChange={darkModeChange}
-          /> */}
-          <DarkModeButton onClick={darkModeChange} onChange={darkMode} />
+          <DarkModeButton abc={darkModeChange} onChange={darkMode} />
 
         <div className="hero-body">
           <p className="title has-text-centered">
@@ -20,16 +22,16 @@ export function Header({ darkModeChange, darkMode }) {
           <p className="subtitle has-text-centered">
             Everything you need to <strong>create a website</strong> with Bulma
           </p>
-          <nav className="breadcrumb is-centered" aria-label="breadcrumbs">
-              <ul>
-                <li><a href="/main">Main</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
-          </nav>
+
+          <ul className='headerNavs'>
+            <li><Link to="/main">Main</Link></li>
+            <li><Link to="/About">About</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+          </ul>
         </div>
       </section>
-    </>
+      </>
+     </Router>
   );
 }
 

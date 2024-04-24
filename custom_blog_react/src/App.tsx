@@ -1,7 +1,7 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  // Navigate,
+  Navigate,
 } from "react-router-dom";
 import { useState } from 'react';
 import { Header } from './components/Header'
@@ -13,6 +13,11 @@ import ErrorPage from "./ErrorPage";
 import './index.css';
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navigate to="/main" replace />,
+    children: [],
+  },
   {
     path: "/main",
     element: <Main />,
@@ -36,6 +41,7 @@ function App() {
   };
 
   return (
+    <div>
     <div className={`Mode ${darkModeButton ? "dark" : "light"}`}>
       <Header darkModeChange={darkModeChange} darkMode={darkModeButton ? "dark" : "light"} />
       <div style={{ marginBottom: '100px' }} />
@@ -43,6 +49,8 @@ function App() {
       <div style={{ marginTop: '100px' }} />
       <Footer />
     </div>
+    </div>
+    
   );
 }
 

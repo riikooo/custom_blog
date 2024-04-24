@@ -4,12 +4,12 @@ import 'bulma/css/bulma.css';
 import light from '../assets/17992.png'
 import dark from '../assets/17943.png'
 
-export function DarkModeButton({ onClick, onChange }) {
+export function DarkModeButton({ abc, onChange }) {
 
   return (
     <>
       <div className="dark-mode">
-        <button className="button is-outlined" onClick={onClick}>
+        <button className="button is-outlined" onClick={abc}>
         <figure className="image dark-mode-button">
             <img src={onChange} />
           </figure>
