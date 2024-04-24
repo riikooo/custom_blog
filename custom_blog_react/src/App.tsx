@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className={`Mode ${darkModeButton ? "dark" : "light"}`}>
-      <Header darkModeChange={darkModeChange} />
+      <Header darkModeChange={darkModeChange} darkMode={darkModeButton ? "dark" : "light"} />
       <div style={{ marginBottom: '100px' }} />
       <RouterProvider router={router} />
       <div style={{ marginTop: '100px' }} />

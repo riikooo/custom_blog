@@ -22,18 +22,24 @@
 }
 
 .dark-mode {
-  display: flex;
+  /* display: flex; */
   justify-content: flex-end;
+  height: 80px;
+  width: 60px;
 }
 
-.noneDark {
+/* .dark-mode image {
+  height: 10px;
+  width: 10px;
+} */
+/* .noneDark {
   height: 35px;
   width: 35px;
-}
+} */
 
-.dark {
+/* .dark-mode-button {
   padding-top: 10px;
-}
+} */
 
 .Mode.dark {
   background-color: #3a383b;
