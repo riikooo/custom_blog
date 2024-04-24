@@ -9,15 +9,52 @@ export function Blog() {
       <h1>*******Blog*******</h1>
       <p>$$$$$$$$</p>
       <div className="blog-contents is-flex is-justify-content-center is-spaced">
-        <button className="button is-light is-large">Light</button>
-        <button className="button is-light is-large">Light</button>
-        <button className="button is-light is-large">Light</button>
-        <button className="button is-light is-large">Light</button>
-        <button className="button is-light is-large">Light</button>
-        <button className="button is-light is-large">Light</button>
-        <button className="button is-light is-large">Light</button>
-        <button className="button is-light is-large">Light</button>
-        <button className="button is-light is-large">Light</button>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+        <div>
+          <button className="button is-light is-large">Light</button>
+          <h2>komodmr</h2>
+          <p>abcdefg</p>
+        </div>
+       
       </div>
     </div>
   )}

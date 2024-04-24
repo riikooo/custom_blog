@@ -7,6 +7,7 @@ import { DarkModeButton } from './DarkModeButton';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 // import { List } from 'react-native-paper';
 
+
 export function Header({ darkModeChange, darkMode }) {
 
   return (
@@ -14,7 +15,6 @@ export function Header({ darkModeChange, darkMode }) {
     <>
       <section className="hero">
           <DarkModeButton abc={darkModeChange} onChange={darkMode} />
-
         <div className="hero-body">
           <p className="title has-text-centered">
             Documentation
@@ -24,9 +24,9 @@ export function Header({ darkModeChange, darkMode }) {
           </p>
 
           <ul className='headerNavs'>
-            <li><Link to="/main">Main</Link></li>
-            <li><Link to="/About">About</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to='/main'>Main</Link></li>
+            <li><Link to='/About'>About</Link></li>
+            <li><Link to='/blog'>Blog</Link></li>
           </ul>
         </div>
       </section>

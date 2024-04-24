@@ -12,11 +12,10 @@ import { Blog } from "./components/Blog";
 import ErrorPage from "./ErrorPage";
 import './index.css';
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate to="/main" replace />,
-    children: [],
   },
   {
     path: "/main",
@@ -33,7 +32,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
+const App = () => {
   const [darkModeButton, setDarkModeButton] = useState(false);
 
   const darkModeChange = () => {
@@ -50,7 +49,6 @@ function App() {
       <Footer />
     </div>
     </div>
-    
   );
 }
 

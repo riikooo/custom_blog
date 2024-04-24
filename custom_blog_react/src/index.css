@@ -62,3 +62,31 @@ footer {
 .headerNavs li:first-child {
   padding-left: 0px;
 }
+
+/* Mainコンポーネント */
+.main-contet  {
+  display: flex;
+}
+
+.main-contets-button {
+  width: 40%;
+  justify-content: 'center';
+}
+
+.main-contets-youtube {
+  width: 60%;
+}
+
+.main-contets button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 40px 30px;
+  /* text-align: center; */
+  /* text-decoration: none; */
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px; /* 任意の角丸具合を設定 */
+}
