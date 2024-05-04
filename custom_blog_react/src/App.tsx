@@ -48,9 +48,7 @@ const App = () => {
       <div style={{ marginBottom: '100px' }} />
       <RouterProvider router={router} />
       <div style={{ marginTop: '100px' }} />
-      {/* <Footer /> */}
     </div>
-    // </div>
   );
 }
 

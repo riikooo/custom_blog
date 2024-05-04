@@ -6,7 +6,7 @@ import '../index.css';
 
 // import { BrowserRouter as Router, Link } from 'react-router-dom';
 // import { BrowserRouter as Link } from 'react-router-dom';
-// import { List } from 'react-native-paper';
+import { Link } from "react-router-dom";
 
 
 export function Header() {
@@ -24,13 +24,12 @@ export function Header() {
           </p>
 
           <ul className='headerNavs'>
-           <li><a href={`/main`}>Main</a></li>
-           <li><a href={`/About`}>About</a></li>
-           <li><a href={`/blog`}>blog</a></li>
+           <li><Link to={`/main`}>Main</Link></li>
+           <li><Link to={`/About`}>About</Link></li>
+           <li><Link to={`/blog`}>blog</Link></li>
           </ul>
         </div>
       </section>
-      {/* <Outlet/> */}
       </>
   );
 }

@@ -12,8 +12,8 @@ export function About() {
           <img className="is-rounded" src="https://bulma.io/assets/images/placeholders/128x128.png" />
         </figure>
       </div>
-      <h1>React</h1>
-      <p>Hi, I'm Kent C. Dodds, I'm a full time educator.</p>
+      <h1>React　Riko</h1>
+      <p>こんにちは</p>
       <p>I make the world a better place by teaching people like you how to make quality software.</p>
     </div>
 
