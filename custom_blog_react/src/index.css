@@ -16,6 +16,7 @@
   font-size: 50px;
 }
 
+/* ブログpage */
 .blog-contents {
   flex-wrap: wrap;
 }
@@ -25,6 +26,7 @@
   width: 270px;
 }
 
+/* ダークモード */
 .dark-mode {
   /* display: flex; */
   justify-content: flex-end;
@@ -90,3 +92,15 @@ footer {
   cursor: pointer;
   border-radius: 50px; /* 任意の角丸具合を設定 */
 }
+
+/* ブログの画像の部分を３個おきに折返しさせたい。 */
+
+/* .latest-work--image:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.latest-work--image:nth-child(3n+1) {
+  margin-left: 0;
+} */
+
+/* ↑boulだとこんな感じでおりかえしてた */

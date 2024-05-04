@@ -1,20 +1,20 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
 import '../index.css';
-import { DarkModeButton } from './DarkModeButton';
+// import { Outlet } from "react-router-dom";
+// import { DarkModeButton } from './DarkModeButton';
 
 // import { BrowserRouter as Router, Link } from 'react-router-dom';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import { BrowserRouter as Link } from 'react-router-dom';
 // import { List } from 'react-native-paper';
 
 
-export function Header({ darkModeChange, darkMode }) {
+export function Header() {
 
   return (
-    <Router>
     <>
       <section className="hero">
-          <DarkModeButton abc={darkModeChange} onChange={darkMode} />
+          {/* <DarkModeButton abc={darkModeChange} onChange={darkMode} /> */}
         <div className="hero-body">
           <p className="title has-text-centered">
             Documentation
@@ -24,14 +24,14 @@ export function Header({ darkModeChange, darkMode }) {
           </p>
 
           <ul className='headerNavs'>
-            <li><Link to='/main'>Main</Link></li>
-            <li><Link to='/About'>About</Link></li>
-            <li><Link to='/blog'>Blog</Link></li>
+           <li><a href={`/main`}>Main</a></li>
+           <li><a href={`/About`}>About</a></li>
+           <li><a href={`/blog`}>blog</a></li>
           </ul>
         </div>
       </section>
+      {/* <Outlet/> */}
       </>
-     </Router>
   );
 }
 
