@@ -1,5 +1,20 @@
 @charset "utf-8";
 
+/* メインの左右のマージン */
+.main-contets {
+  margin:0 10%;
+}
+
+/* Aboutのマージン */
+.about {
+  margin: 0 10%;
+}
+
+/* Blogのマージン */
+.has-text-centered {
+  margin: 0 10%;
+}
+
 .centered-image {
   display: block;
   margin-left: auto;

@@ -45,9 +45,9 @@ const App = () => {
     <div>
     {/* <div className={`Mode ${darkModeButton ? "dark" : "light"}`}> */}
       {/* <Header darkModeChange={darkModeChange} darkMode={darkModeButton ? "dark" : "light"} /> */}
-      <div style={{ marginBottom: '100px' }} />
+      <div/>
       <RouterProvider router={router} />
-      <div style={{ marginTop: '100px' }} />
+      <div/>
     </div>
   );
 }
