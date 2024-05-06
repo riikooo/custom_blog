@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* メインの左右のマージン */
+/* Mainの左右のマージン */
 .main-contets {
   margin:0 10%;
 }
@@ -81,41 +81,32 @@ footer {
 }
 
 /* Mainコンポーネント */
-.main-contet  {
+.main-contet {
   display: flex;
+  text-align: center  ;
+  height: 600px;
 }
-
-.main-contets-button {
+.main-contets-texts {
   width: 40%;
-  justify-content: 'center';
+  background-color: azure;
 }
+.main-contets-text {
+  display: flex;
 
-.main-contets-youtube {
+  height: 100%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px; 
+  & h2 {
+    font-size: 60px;
+  }
+  & p {
+    font-size: 30px;
+  }
+}
+.main-contets-whether {
   width: 60%;
+  background-color: antiquewhite;
 }
-
-.main-contets button {
-  background-color: white;
-  color: black;
-  border: none;
-  padding: 40px 30px;
-  /* text-align: center; */
-  /* text-decoration: none; */
-  /* display: inline-block; */
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50px; /* 任意の角丸具合を設定 */
-}
-
-/* ブログの画像の部分を３個おきに折返しさせたい。 */
-
-/* .latest-work--image:nth-child(-n+3) {
-  margin-top: 0;
-}
-
-.latest-work--image:nth-child(3n+1) {
-  margin-left: 0;
-} */
-
-/* ↑boulだとこんな感じでおりかえしてた */

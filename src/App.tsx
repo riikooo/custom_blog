@@ -9,7 +9,7 @@ import { Main } from './components/Main'
 import { About } from "./components/About";
 import { Blog } from "./components/Blog";
 import ErrorPage from "./ErrorPage";
-import './index.css';
+import './index.scss';
 import { Root } from "./components/Root";
 
 export const router = createBrowserRouter([

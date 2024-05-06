@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import '../index.css';
+import '../index.scss';
 
 
 export function Blog() {
