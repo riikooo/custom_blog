@@ -12,14 +12,14 @@ import { Link } from "react-router-dom";
 export function Header() {
 
   return (
-    <>
-      <section className="hero">
+    <div className='header-is-top'>
+      <section className='header-is-top--texts'>
           {/* <DarkModeButton abc={darkModeChange} onChange={darkMode} /> */}
-        <div className="hero-body">
-          <p className="title has-text-centered">
+        <div >
+          <p className='header-is-top--texts-title'>
             Documentation
           </p>
-          <p className="subtitle has-text-centered">
+          <p className='header-is-top--texts-tect'>
             Everything you need to <strong>create a website</strong> with Bulma
           </p>
 
@@ -30,7 +30,7 @@ export function Header() {
           </ul>
         </div>
       </section>
-      </>
+      </div>
   );
 }
 

@@ -1,18 +1,46 @@
 @charset "utf-8";
 
+/* Header */
+.header-is-top {
+  background-color: #000;
+  height: 150px;
+  /* Headerを上に固定 */
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  &--texts {
+    text-align: center;
+    &-title {
+      font-size: 40px;
+    }
+    &-text {
+      font-size: 25px;
+    }
+  }
+}
+
 /* Mainの左右のマージン */
 .main-contets {
-  margin:0 10%;
+  margin:auto;
+  width: 90%;
+  padding-top: 150px;
 }
 
 /* Aboutのマージン */
 .about {
-  margin: 0 10%;
+  margin:auto;
+  width: 90%;
+  padding-top: 150px;
 }
 
 /* Blogのマージン */
 .has-text-centered {
-  margin: 0 10%;
+  margin:auto;
+  width: 90%;
+  padding-top: 150px;
 }
 
 .centered-image {
@@ -98,7 +126,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 40px; 
+  margin: 0 40px;
   & h2 {
     font-size: 60px;
   }
@@ -109,4 +137,21 @@ footer {
 .main-contets-whether {
   width: 60%;
   background-color: antiquewhite;
+}
+
+// mainの天気の部分
+.weather-contents {
+  & form {
+    margin: 50px auto;
+  }
+}
+.WhetherResults {
+  font-size: 30px;
+  &-img {
+    display: grid;
+    place-items: center;
+    & img {
+      height: 150px;
+    }
+  }
 }
