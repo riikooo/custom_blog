@@ -13,10 +13,7 @@ export function Main() {
           </div>
         </div>
         <div className='main-contets-whether'>
-          <h2>今日の天気</h2>
-          <div>
-            <Whether/>
-          </div>
+          <Whether/>
         </div>
       </div>
     </div>

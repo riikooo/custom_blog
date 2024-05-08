@@ -2,7 +2,7 @@
 
 ## 各種バージョン
 
-![node version](https://img.shields.io/badge/node-20.2.0-48C628.svg?style=flat-square) 
+![node version](https://img.shields.io/badge/node-20.2.0-48C628.svg?style=flat-square)
 ![npm version](https://img.shields.io/badge/npm-9.6.6-2D7DBE.svg?style=flat-square)
 
 asdf を使用している方は以下の方法で nodejs を install してください。

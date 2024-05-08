@@ -8,27 +8,35 @@ import {
 import { Main } from './components/Main'
 import { About } from "./components/About";
 import { Blog } from "./components/Blog";
-import ErrorPage from "./ErrorPage";
 import './index.scss';
 import { Root } from "./components/Root";
+import { NoFound } from "./components/Nofound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    // errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/",
+        element: <Main />,
+      },
       {
         path: "/main",
         element: <Main />,
-        errorElement: <ErrorPage />,
       },
       {
         path: "/about",
-        element: <About/>,
+        element: <About />,
       },
       {
         path: "/blog",
-        element: <Blog/>,
+        element: <Blog />,
+      },
+      {
+        path: "*",
+        element: <NoFound />,
       },
     ],
   },
