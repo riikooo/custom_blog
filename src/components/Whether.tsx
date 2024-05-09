@@ -21,11 +21,11 @@ export function Whether() {
   }
   const getWeather = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // if (city.match(/^[\w@\.-]+$/)) {
-    //   // バリデーションエラーをユーザーに通知する
-    //   alert('無効な文字が含まれています。');
-    //   return;
-    // }
+    if (!city.match(/^[\w@\.-]+$/)) {
+      // バリデーションエラーをユーザーに通知する
+      alert('英語で入力してね');
+      return;
+    }
     fetch(`https://api.weatherapi.com/v1/current.json?key=6b53fd2ed5d941f8989134646241404 &q=${city}&aqi=no`)
       .then(res => res.json())
       .then(data => {setResults({
@@ -35,7 +35,7 @@ export function Whether() {
         conditionText: data.current.condition.text,
         icon: data.current.condition.icon
       })})
-      .catch(err => alert("エラーが発生しました！ページをリロードして再トライしてみて！"))
+      .catch(err => alert("そんな都市名はないはず"))
     }
   return (
     <div className='weather-contents'>

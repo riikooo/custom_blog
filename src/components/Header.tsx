@@ -26,7 +26,7 @@ export function Header() {
           <ul className='headerNavs'>
            <li><Link to={`/main`}>Main</Link></li>
            <li><Link to={`/About`}>About</Link></li>
-           <li><Link to={`/blog`}>blog</Link></li>
+           <li><Link to={`/blogs`}>blog</Link></li>
           </ul>
         </div>
       </section>

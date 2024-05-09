@@ -11,6 +11,7 @@ import { Blog } from "./components/Blog";
 import './index.scss';
 import { Root } from "./components/Root";
 import { NoFound } from "./components/Nofound";
+import { MoreBlog } from "./components/MoreBlogs/MoreBlog"
 
 export const router = createBrowserRouter([
   {
@@ -31,8 +32,12 @@ export const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/blog",
+        path: "/blogs",
         element: <Blog />,
+      },
+      {
+        path: "/blogs/:blogId",
+        element: <MoreBlog />,
       },
       {
         path: "*",

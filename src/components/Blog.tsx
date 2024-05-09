@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 import 'bulma/css/bulma.css';
 import '../index.scss';
 
@@ -9,16 +9,16 @@ export function Blog() {
       <h1>*******Blog*******</h1>
       <p>$$$$$$$$</p>
       <div className="blog-contents is-flex is-justify-content-center is-spaced">
-        <div>
+        <Link to={`/blogs/1`}>
           <button className="button is-light is-large">Light</button>
           <h2>komodmr</h2>
           <p>abcdefg</p>
-        </div>
-        <div>
+        </Link>
+        <Link to={`/blogs/2`}>
           <button className="button is-light is-large">Light</button>
           <h2>komodmr</h2>
           <p>abcdefg</p>
-        </div>
+        </Link>
         <div>
           <button className="button is-light is-large">Light</button>
           <h2>komodmr</h2>
