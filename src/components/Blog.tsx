@@ -19,16 +19,16 @@ export function Blog() {
           <h2>komodmr</h2>
           <p>abcdefg</p>
         </Link>
-        <div>
+        <Link to={`/blogs/3`}>
           <button className="button is-light is-large">Light</button>
           <h2>komodmr</h2>
           <p>abcdefg</p>
-        </div>
-        <div>
+        </Link>
+        <Link to={`/blogs/4`}>
           <button className="button is-light is-large">Light</button>
           <h2>komodmr</h2>
           <p>abcdefg</p>
-        </div>
+        </Link>
         <div>
           <button className="button is-light is-large">Light</button>
           <h2>komodmr</h2>

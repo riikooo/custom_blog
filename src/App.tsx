@@ -11,7 +11,7 @@ import { Blog } from "./components/Blog";
 import './index.scss';
 import { Root } from "./components/Root";
 import { NoFound } from "./components/Nofound";
-import { MoreBlog } from "./components/MoreBlogs/MoreBlog"
+import { MoreBlog } from "./components/MoreBlog"
 
 export const router = createBrowserRouter([
   {
