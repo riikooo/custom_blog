@@ -1,4 +1,4 @@
-# custom_blog_react
+# custom_blog
 
 ## 各種バージョン
 
