@@ -1,5 +1,5 @@
 import 'bulma/css/bulma.css';
-import '../../index.scss';
+import '../index.scss';
 
 export function MoreBlog() {
   return (

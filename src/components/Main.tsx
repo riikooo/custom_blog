@@ -2,6 +2,7 @@ import 'bulma/css/bulma.css';
 import '../index.scss';
 import { Whether } from './Whether';
 import StarWars from './StarWars';
+import { SlidesContents } from './SlidesContents';
 
 export function Main() {
   return (
@@ -24,6 +25,10 @@ export function Main() {
           <div className='main-sub-contents-starwars'>
             <StarWars />
           </div>
-        </div>
+      </div>
+      {/* 出てこないスライダー */}
+      <div className='slidesContents'>
+        <SlidesContents/>
+      </div>
     </div>
   )}
