@@ -4,7 +4,9 @@ import { Whether } from './Whether';
 import StarWars from './StarWars';
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import "swiper/css/effect-cube";
+ import { Pagination, Mousewheel, EffectCube } from "swiper/modules";
+import { SlideNextButton } from './SlidesContents';
 
 const data: string[] = ["Slide 1", "Slide 2", "Slide 3", "Slide 4"];
 
@@ -27,10 +29,12 @@ export function Main() {
        <div >
        <Swiper
         spaceBetween={50}
-        slidesPerView={3}
+        centeredSlides={true}
+        slidesPerView={2}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        modules={[Pagination]}
+        modules={[Pagination, Mousewheel, EffectCube]}
+        effect="cube"
         pagination={{
           type: "fraction",
         }}
@@ -40,6 +44,10 @@ export function Main() {
             <div style={{ background: "grey", height: "300px" }}>{d}</div>
           </SwiperSlide>
         ))}
+        <div>
+          {/* <SlidePrevButton /> */}
+          <SlideNextButton />
+        </div>
       </Swiper>
       </div>
       </div>
